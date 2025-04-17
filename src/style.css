@@ -111,6 +111,177 @@ ul {
 }
 
 /****************************
+ * Card Section
+ ******************************/
+.cards-section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	padding: 40px 20px;
+	font-family: Arial, sans-serif;
+	background: #fff;
+}
+
+/* Login Area */
+.login-area {
+	flex: 1 1 300px;
+	max-width: 350px;
+	/* background: #f9f9f9; */
+	/* padding: 20px; */
+	/* border: 1px solid #ccc; */
+	/* border-radius: 10px; */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 10px;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+}
+.login-form .login-header {
+	background: #f9f9f9;
+	padding: 20px 20px 0px 20px;
+	margin-bottom: 20px;
+}
+.login-form .remember {
+	display: flex;
+	align-items: center;
+	font-size: 0.9rem;
+	margin-bottom: 10px;
+}
+
+.login-form button[type="submit"] {
+	width: 100%;
+	color: black;
+	font-size: 20px;
+	padding: 8px 12px;
+	border: 2px solid #fff;
+	border-radius: 25px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+.login-form .links {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.85rem;
+	margin-bottom: 10px;
+}
+
+.login-form .links a {
+	color: #0071ce;
+	text-decoration: none;
+}
+
+.open-account {
+	width: 100%;
+	padding: 10px;
+	background: #eaeaea;
+	border: none;
+	font-weight: bold;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.cta-buttons button {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	font-weight: bold;
+	color: white;
+}
+
+.find-center {
+	background-color: #c8102e;
+	padding: 0px 0;
+}
+
+.schedule-appt {
+	background-color: #9d0031;
+}
+
+/* Card Offers */
+.card-offers {
+	flex: 3 1 600px;
+}
+
+.card-offers h2 {
+	font-size: 1.8rem;
+	margin-bottom: 30px;
+}
+
+.cards-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.card-box {
+	flex: 1 1 220px;
+	padding: 15px;
+	text-align: center;
+	/* border: 1px solid #ddd; */
+	border-radius: 10px;
+	background: #fff;
+}
+
+.card-box .bonus {
+	font-size: 5rem;
+	color: #d4001a;
+
+	margin-bottom: 5px;
+}
+.card-box sup {
+	font-size: 3rem;
+	color: #555;
+}
+
+.card-box .desc {
+	font-size: 0.9rem;
+	margin-bottom: 10px;
+}
+
+.card-box img {
+	width: 100%;
+	max-width: 160px;
+	height: auto;
+	margin: 10px 0;
+}
+
+.card-box h3 {
+	font-size: 0.9rem;
+	margin-bottom: 5px;
+}
+
+.card-box .highlight {
+	font-size: 0.9rem;
+	color: #222;
+}
+
+.card-box .highlight a {
+	color: #0071ce;
+	text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+	.cards-section {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.cards-grid {
+		justify-content: center;
+	}
+
+	.card-box {
+		flex: 1 1 300px;
+	}
+}
+
+/****************************
  * Secure Banking Section
  *****************************/
 /* Section heading */
