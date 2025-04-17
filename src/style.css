@@ -436,6 +436,112 @@ ul {
 	margin-bottom: 40px;
 }
 
+/*
+ **************************
+ * Financial  Section
+ **************************/
+.financial-section {
+	padding: 3rem 1rem;
+	text-align: center;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.heading {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.subheading {
+	font-size: 1rem;
+	color: #555;
+	margin-bottom: 2rem;
+}
+
+.card-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.card {
+	position: relative;
+	height: 280px;
+	background-size: cover;
+	background-position: center;
+	/* border-radius: 10px; */
+	overflow: hidden;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+	transition: transform 0.3s ease;
+	filter: brightness(0.97) contrast(1.05);
+}
+
+.card:hover {
+	transform: translateY(-5px);
+}
+
+.card-content {
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+	right: 15px;
+	background: #fff;
+	padding: 1rem;
+	/* border-radius: 8px; */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	text-align: left;
+}
+
+.card-content .icon {
+	font-size: 1.5rem;
+}
+
+.card-content p {
+	font-size: 0.95rem;
+	color: #333;
+	margin: 0;
+}
+
+.footer-text {
+	font-size: 1rem;
+	color: #444;
+	margin-bottom: 1rem;
+}
+
+.btn {
+	background-color: #003366;
+	color: #fff;
+	padding: 0.75rem 1.5rem;
+	border-radius: 6px;
+	text-decoration: none;
+	font-weight: 500;
+	transition: background 0.3s;
+}
+
+.btn:hover {
+	background-color: #002244;
+}
+
+@media (max-width: 600px) {
+	.heading {
+		font-size: 1.5rem;
+	}
+	.subheading,
+	.footer-text {
+		font-size: 0.95rem;
+	}
+	.card-content {
+		bottom: 15px;
+		padding: 0.8rem;
+	}
+}
 /* Shared section styles */
 .security-section,
 .mobile-banking-section {
