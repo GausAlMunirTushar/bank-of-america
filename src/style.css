@@ -38,7 +38,6 @@ ul {
 /* Header Styles */
 .header {
 	background-color: #fff;
-	border-bottom: 1px solid #ddd;
 }
 .top-bar {
 	background-color: var(--gray-color);
@@ -76,27 +75,44 @@ ul {
 }
 
 .main-nav {
-	display: flex;
-	justify-content: space-between;
+	width: 1220px;
+	margin-left: 100px;
 	align-items: center;
-	padding: 15px 20px;
+	padding: 15px 0px;
 }
 .logo {
-	max-width: 150px;
+	max-width: 300px;
 }
 .fdic-logo {
 	width: 400px;
 	height: auto;
 }
+.main-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+.main-menu img {
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	margin-right: 5px;
+	color: #0b3caf;
+}
 .main-menu a {
-	margin-left: 15px;
-	font-weight: bold;
-	color: #0050b5;
+	font-weight: 400;
+	font-size: 16px;
+	/* padding-right: 70px; */
+}
+.main-menu a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid black;
 }
 
-/**
+/****************************
  * Secure Banking Section
- */
+ *****************************/
 /* Section heading */
 .news-info > h1 {
 	text-align: center;
