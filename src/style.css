@@ -1,0 +1,320 @@
+/* Global config */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Variables */
+:root {
+	--gray-color: #f5f5f5;
+
+	--footer-bg: #001c5b;
+	--footer-text: #fff;
+	--footer-link: #ffffff;
+	--footer-link-hover: #fff;
+}
+
+/* Reset and base styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background-color: #f9f9f9;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+ul {
+	list-style: none;
+}
+
+.container {
+	width: 1440px;
+	margin: 0 auto;
+}
+/* Header Styles */
+.header {
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+.top-bar {
+	background-color: var(--gray-color);
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+.top-bar p {
+	font-size: 12px;
+	font-style: italic;
+}
+.top-nav {
+	background: var(--gray-color);
+}
+.top-links {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 100px;
+	color: #333;
+	font-weight: 500;
+	gap: 30px;
+	font-size: 14px;
+	padding-bottom: 3px;
+}
+.top-links li a:hover {
+	text-decoration: none;
+	border-bottom: 2px solid black;
+}
+.top-links li a img {
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+}
+.logo {
+	max-width: 150px;
+}
+.fdic-logo {
+	width: 400px;
+	height: auto;
+}
+.main-menu a {
+	margin-left: 15px;
+	font-weight: bold;
+	color: #0050b5;
+}
+
+/**
+ * Secure Banking Section
+ */
+/* Section heading */
+.news-info > h1 {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 40px;
+}
+
+/* Shared section styles */
+.security-section,
+.mobile-banking-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 60px;
+	gap: 20px;
+}
+
+.security-content,
+.mobile-content {
+	flex: 1 1 400px;
+	padding: 20px;
+}
+
+.security-image,
+.mobile-image {
+	flex: 1 1 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.security-image img,
+.mobile-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	margin-top: 15px;
+	padding: 12px 24px;
+	border-radius: 20px;
+	font-size: 1rem;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.btn-primary {
+	background-color: #d4001a;
+	color: #fff;
+}
+
+.btn-primary:hover {
+	background-color: #a60015;
+}
+
+.btn-outline {
+	border: 2px solid #fff;
+	color: #fff;
+	background-color: transparent;
+}
+
+.btn-outline:hover {
+	background-color: #ffffff20;
+}
+
+/* Mobile banking background */
+.mobile-banking-section {
+	background: linear-gradient(to right, #001d66, #002b99);
+	color: white;
+	border-radius: 20px;
+	padding: 40px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.security-section,
+	.mobile-banking-section {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.btn {
+		width: 100%;
+		max-width: 300px;
+	}
+}
+
+/***************************
+ *  Disclaimer Section 
+ * **************************/
+
+.disclaimer-section {
+	background-color: var(--gray-color);
+	padding: 3rem 5rem;
+	font-family: Arial, sans-serif;
+	color: #333;
+}
+
+.section-title {
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+.disclaimer-table {
+	border: 1px solid #000;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.5rem;
+}
+
+.disclaimer-row {
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 1px solid #000;
+}
+
+.disclaimer-row:first-child {
+	border-top: none;
+}
+
+.disclaimer-cell {
+	flex: 1;
+	min-width: 200px;
+	padding: 1rem;
+	border-right: 1px solid #000;
+	font-weight: 700;
+	text-align: center;
+}
+
+.disclaimer-cell:last-child {
+	border-right: none;
+}
+
+.disclaimer-text {
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+
+.disclaimer-text a {
+	color: #1a4dc4;
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.disclaimer-row {
+		flex-direction: column;
+	}
+
+	.disclaimer-cell {
+		border-right: none;
+		border-bottom: 1px solid #000;
+	}
+
+	.disclaimer-cell:last-child {
+		border-bottom: none;
+	}
+}
+
+/********************************
+ * Footer Section 
+ ********************************/
+.footer {
+	background-color: var(--footer-bg);
+	color: var(--footer-text);
+	text-align: center;
+	padding: 2rem 1rem;
+	font-size: 14px;
+}
+
+.footer a {
+	color: var(--footer-link);
+	text-decoration: none;
+	/* margin: 0 8px; */
+	display: inline-block;
+	padding-bottom: 2px;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+	color: var(--footer-link-hover);
+}
+
+.footer-links {
+	max-width: 1200px;
+	margin: 0 auto 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	line-height: 1.6;
+}
+
+.footer-social {
+	margin-bottom: 1.5rem;
+}
+
+.footer-social p {
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+}
+
+.social-icons a {
+	color: var(--footer-link);
+	font-size: 18px;
+	margin: 0 8px;
+	transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+	color: var(--footer-link-hover);
+}
+
+.footer-bottom p {
+	font-size: 13px;
+}
+.footer-bottom .equal-housing {
+	text-decoration: underline;
+}
