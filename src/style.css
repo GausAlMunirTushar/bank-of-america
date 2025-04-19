@@ -556,7 +556,9 @@ ul {
 		padding: 0.8rem;
 	}
 }
-/* Shared section styles */
+/*********************************
+ * Secure Banking Section
+ *********************************/
 .security-section,
 .mobile-banking-section {
 	display: flex;
@@ -623,6 +625,10 @@ ul {
 	color: white;
 	border-radius: 20px;
 	padding: 40px 20px;
+	background-image: url("./images/secure-bg.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 /* Responsive Design */
