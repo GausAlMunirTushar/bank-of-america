@@ -797,6 +797,9 @@ ul {
 	min-width: 300px;
 	max-width: 600px;
 	padding: 20px;
+	background-image: url("./images/top-box.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .offer-title {
