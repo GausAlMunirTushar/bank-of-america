@@ -130,15 +130,15 @@ ul {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 40px;
-	padding: 40px 20px;
+	padding: 40px 90px;
 	font-family: Arial, sans-serif;
 	background: #fff;
 }
 
 /* Login Area */
 .login-area {
-	flex: 1 1 300px;
-	max-width: 350px;
+	flex: 1 1 270px;
+	max-width: 300px;
 	/* background: #f9f9f9; */
 	/* padding: 20px; */
 	/* border: 1px solid #ccc; */
@@ -221,19 +221,20 @@ ul {
 }
 
 .card-offers h2 {
-	font-size: 1.8rem;
-	margin-bottom: 30px;
+	font-size: 2rem;
+	font-weight: normal;
+	/* margin-bottom: 30px; */
 }
 
 .cards-grid {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
+	/* gap: 10px; */
 }
 
 .card-box {
 	flex: 1 1 220px;
-	padding: 15px;
+	/* padding: 15px; */
 	text-align: center;
 	/* border: 1px solid #ddd; */
 	border-radius: 10px;
@@ -241,10 +242,10 @@ ul {
 }
 
 .card-box .bonus {
-	font-size: 5rem;
+	font-size: 4rem;
+	font-weight: lighter;
 	color: #d4001a;
-
-	margin-bottom: 5px;
+	/* margin-bottom: 5px; */
 }
 .card-box sup {
 	font-size: 3rem;
@@ -253,7 +254,11 @@ ul {
 
 .card-box .desc {
 	font-size: 0.9rem;
-	margin-bottom: 10px;
+	color: #d4001a;
+	/* margin-bottom: 10px; */
+}
+.card .desc small {
+	color: #333;
 }
 
 .card-box img {
