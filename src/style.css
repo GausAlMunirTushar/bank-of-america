@@ -568,13 +568,16 @@ ul {
 	margin-bottom: 60px;
 	gap: 20px;
 }
-
+.mobile-banking-section h2 {
+	font-size: 2rem;
+	font-weight: normal;
+	width: 300px;
+}
 .security-content,
 .mobile-content {
 	flex: 1 1 400px;
-	padding: 20px;
+	padding: 20px 150px;
 }
-
 .security-image,
 .mobile-image {
 	flex: 1 1 300px;
@@ -583,9 +586,10 @@ ul {
 	align-items: center;
 }
 
-.security-image img,
+.security-image,
 .mobile-image img {
-	max-width: 100%;
+	width: 241px;
+	height: 100px;
 	height: auto;
 }
 
@@ -612,6 +616,7 @@ ul {
 .btn-outline {
 	border: 2px solid #fff;
 	color: #fff;
+	border-radius: 40px;
 	background-color: transparent;
 }
 
@@ -623,9 +628,9 @@ ul {
 .mobile-banking-section {
 	background: linear-gradient(to right, #001d66, #002b99);
 	color: white;
-	border-radius: 20px;
+	height: 350px;
 	padding: 40px 20px;
-	background-image: url("./images/secure-bg.webp");
+	background-image: url("./images/secure-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
